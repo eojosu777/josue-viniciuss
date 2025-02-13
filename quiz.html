@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Futebol</title>
+    <script src="./javascript/scriptquiz.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Meu Site</a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="port2.html">Portifolio</a></li>
+                <li><a href="botaocont.html">Contato</a></li>
+        </nav>
+    </header>
+<div class="quiz-container">
+    <h2>Quiz de Futebol</h2>
+    <div id="quiz">
+        <div class="question" id="question1">
+            <p>Quem é o maior artilheiro da história das Copas do Mundo?</p>
+            <button class="answer" onclick="checkAnswer(1, 'a')">Miroslav Klose</button>
+            <button class="answer" onclick="checkAnswer(1, 'b')">Cristiano Ronaldo</button>
+            <button class="answer" onclick="checkAnswer(1, 'c')">Pele</button>
+            <button class="answer" onclick="checkAnswer(1, 'd')">Marta</button>
+        </div>
+
+        <div class="question" id="question2" style="display:none;">
+            <p>Qual time ganhou a Copa do Mundo de 2014?</p>
+            <button class="answer" onclick="checkAnswer(2, 'a')">Brasil</button>
+            <button class="answer" onclick="checkAnswer(2, 'b')">Argentina</button>
+            <button class="answer" onclick="checkAnswer(2, 'c')">Alemanha</button>
+            <button class="answer" onclick="checkAnswer(2, 'd')">França</button>
+        </div>
+
+        <div class="question" id="question3" style="display:none;">
+            <p>Quem é o maior vencedor da Liga dos Campeões da UEFA?</p>
+            <button class="answer" onclick="checkAnswer(3, 'a')">Barcelona</button>
+            <button class="answer" onclick="checkAnswer(3, 'b')">Real Madrid</button>
+            <button class="answer" onclick="checkAnswer(3, 'c')">Liverpool</button>
+            <button class="answer" onclick="checkAnswer(3, 'd')">Bayern de Munique</button>
+        </div>
+    </div>
+
+    <div id="finalScore" style="display:none;">
+        <p>Você obteve <span id="score">0</span> de 3 acertos!</p>
+        <button id="startButton" onclick="restartQuiz()">Recomeçar Quiz</button>
+    </div>
+</div>
+<a href="imc.html"><button>Voltar</button></a>
+<a href="adivinhacao.html"><button>Próximo</button></a>
+</body>
+</html>

@@ -1,0 +1,63 @@
+/* Resetando estilos padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(207, 207, 207);
+}
+
+/* Estilos da barra de navegação */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c2388;
+    padding: 10px 20px;
+}
+
+.navbar .logo a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.navbar .menu {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .menu li {
+    margin-left: 20px;
+}
+
+.navbar .menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar .menu a:hover {
+    color: #3c50ff;
+}
+h3{
+    margin-right: 20cm;
+}
+.Image img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; /* Deixa a imagem redonda */
+    object-fit: cover;
+}
+.btp{
+    width: 250px; 
+    height: 90px;
+    background-color: #0c2388;
+    color: #ffffff;
+}

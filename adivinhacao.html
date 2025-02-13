@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./javascript/scriptadv.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Meu Site</a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="port2.html">Portifolio</a></li>
+                <li><a href="botaocont.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="game-container">
+    <h2>Jogo de Adivinhação</h2>
+    <p>Tente adivinhar o número entre 1 e 100!</p>
+    <input type="number" id="userGuess" placeholder="Digite seu palpite" />
+    <button onclick="checkGuess()">Adivinhar</button>
+    <p id="message"></p>
+    <button id="restartButton" style="display: none;" onclick="restartGame()">Recomeçar</button>
+</div>
+<a href="quiz.html"><button>Voltar</button></a>
+</body>
+</html>

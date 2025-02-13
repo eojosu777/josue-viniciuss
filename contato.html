@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./javascript/scriptcontato.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Meu Site</a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="port2.html">Portifolio</a></li>
+                <li><a href="botaocont.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="form-container">
+        <h2>Fale Comigo</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+            <div>
+                <input type="text" id="name" placeholder="Seu Nome" required />
+            </div>
+            <div>
+                <input type="email" id="email" placeholder="Seu E-mail" required />
+                <div id="emailError" class="error-message"></div>
+            </div>
+            <div>
+                <input type="tel" id="whatsapp" placeholder="Seu WhatsApp" pattern="^\+?(\d{2,3})?\s?\(?\d{2,3}\)?[\s\-]?\d{4}[\s\-]?\d{4}$" required />
+                <div id="whatsappError" class="error-message"></div>
+            </div>
+            <div>
+                <textarea id="message" placeholder="Sua Mensagem" required></textarea>
+            </div>
+            <div>
+                <button type="submit">Enviar Mensagem</button>
+            </div>
+        </form>
+        <div class="social-links">
+            <h3>Me siga no Instagram:</h3>
+            <a href="https://www.instagra.com//jjosue_vf?igsh=cTFpcXBqcDlhYXpq" target="_blank">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>

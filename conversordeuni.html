@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor</title>
+    <script src="./javascript/scriptjsconversor.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Meu Site</a>
+            </div>
+            <ul class="menu">
+              <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="port2.html">Portifolio</a></li>
+                <li><a href="botaocont.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="converter">
+    <h2>Conversor de Unidades</h2>
+
+    <!-- Seletor de tipo de conversão -->
+    <select id="tipoConversao">
+        <option value="celsiusFahrenheit">Celsius para Fahrenheit</option>
+        <option value="metrosCentimetros">Metros para Centímetros</option>
+        <option value="quilosLibras">Quilos para Libras</option>
+    </select>
+
+    <!-- Campo para o valor a ser convertido -->
+    <input type="number" id="valor" placeholder="Digite o valor" />
+
+    <button onclick="converter()">Converter</button>
+
+    <div class="result" id="resultado"></div>
+</div>
+<a href="calculadora.html"><button>Voltar</button></a>
+<a href="imc.html"><button>Próximo</button></a>
+
+</body>
+</html>
